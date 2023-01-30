@@ -33,3 +33,7 @@ split-debuginfo = "unpacked" # faster debug builds on mac
 # Optimize all dependencies even in debug builds (does not affect workspace packages):
 [profile.dev.package."*"]
 opt-level = 2
+
+
+[patch.crates-io]
+winit = { git = "https://github.com/rust-windowing/winit", rev = "483c1d40ae04a8f2a33967beb88b2c890d8e3831" }
